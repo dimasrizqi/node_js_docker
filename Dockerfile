@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json /app
 
 RUN npm install
-RUN npm install express –save
+RUN npm install express 
 
 COPY . /app
 
