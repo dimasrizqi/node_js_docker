@@ -1,12 +1,12 @@
 var express = require('express');
-
+const os = require('os');
 var app = express();
 
  
 
 app.get('/', function (req, res) {
 
-res.send('Hellow world docker js!');
+res.send('Hellow world docker js!' + os.hostname());
 
 });
 
